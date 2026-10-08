@@ -1,0 +1,2 @@
+# StegScan
+Basic steganalysis tool 
