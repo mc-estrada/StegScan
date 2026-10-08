@@ -1,0 +1,16 @@
+file,format,dimensions,size,verdict,score,findings
+.\practical_test\pomeranian.jpg,JPEG,408x612,50974,NO INDICATORS,0,
+.\practical_test\pomeranian_aep.png,PNG,408x612,455333,LIKELY STEGO,8,png-private-chunk(medium) | chi-square-lsb(high)
+.\practical_test\pomeranian_lsb.png,PNG,408x612,455325,LIKELY STEGO,8,png-private-chunk(medium) | chi-square-lsb(high)
+.\practical_test\pomeranian_openstego.png,PNG,408x612,539563,LIKELY STEGO,5,chi-square-lsb(high)
+.\practical_test\pomeranian_scattered_lsb.png,PNG,408x612,455365,LIKELY STEGO,8,png-private-chunk(medium) | chi-square-lsb(high)
+.\practical_test\pug_aep.png,PNG,704x708,532897,SUSPICIOUS,3,png-private-chunk(medium)
+.\practical_test\pug_lsb.png,PNG,704x708,532896,SUSPICIOUS,3,png-private-chunk(medium)
+.\practical_test\pug_openstego.png,PNG,704x708,773200,NO INDICATORS,0,
+.\practical_test\pug_scattered_lsb.png,PNG,704x708,532954,SUSPICIOUS,3,png-private-chunk(medium)
+.\practical_test\tarnation_aep.png,PNG,480x480,380728,LIKELY STEGO,8,png-private-chunk(medium) | chi-square-lsb(high)
+.\practical_test\tarnation_lsb.png,PNG,480x480,380807,LIKELY STEGO,13,png-private-chunk(medium) | chi-square-lsb(high) | lsb-extraction(high)
+.\practical_test\tarnation_openstego.png,PNG,480x480,549942,LIKELY STEGO,5,chi-square-lsb(high)
+.\practical_test\tarnation_scattered_lsb.png,PNG,480x480,380800,LIKELY STEGO,8,png-private-chunk(medium) | chi-square-lsb(high)
+.\practical_test\thugpug.png,PNG,704x708,389267,NO INDICATORS,0,
+.\practical_test\what in tarnation.jpg,JPEG,480x480,35241,NO INDICATORS,0,

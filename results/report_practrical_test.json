@@ -1,0 +1,362 @@
+[
+  {
+    "file": ".\\practical_test\\pomeranian.jpg",
+    "format": "JPEG",
+    "size": 50974,
+    "dimensions": "408x612",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "jpeg-no-eoi",
+        "detail": "no EOI marker found (truncated or damaged)"
+      },
+      {
+        "severity": "info",
+        "check": "pixel-tests-skipped",
+        "detail": "JPEG: spatial LSB tests are not meaningful on decoded pixels (use --force-pixel-tests to run anyway)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pomeranian_aep.png",
+    "format": "PNG",
+    "size": 455333,
+    "dimensions": "408x612",
+    "score": 8,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 455293"
+      },
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.9919 over first 10% of pixels (chi2=67.6, 99 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.9349 @ first 5%; G: max p=0.9200 @ first 5%; B: max p=0.9919 @ first 10%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pomeranian_lsb.png",
+    "format": "PNG",
+    "size": 455325,
+    "dimensions": "408x612",
+    "score": 8,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 455285"
+      },
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.9920 over first 10% of pixels (chi2=67.5, 99 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.9414 @ first 5%; G: max p=0.9198 @ first 5%; B: max p=0.9920 @ first 10%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pomeranian_openstego.png",
+    "format": "PNG",
+    "size": 539563,
+    "dimensions": "408x612",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.9900 over first 10% of pixels (chi2=68.4, 99 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.9336 @ first 5%; G: max p=0.9294 @ first 5%; B: max p=0.9900 @ first 10%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pomeranian_scattered_lsb.png",
+    "format": "PNG",
+    "size": 455365,
+    "dimensions": "408x612",
+    "score": 8,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 455325"
+      },
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.9936 over first 10% of pixels (chi2=66.6, 99 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.9330 @ first 5%; G: max p=0.9148 @ first 5%; B: max p=0.9936 @ first 10%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pug_aep.png",
+    "format": "PNG",
+    "size": 532897,
+    "dimensions": "704x708",
+    "score": 3,
+    "verdict": "SUSPICIOUS",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 532857"
+      },
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.0000 over first 5% of pixels (chi2=238.9, 83 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pug_lsb.png",
+    "format": "PNG",
+    "size": 532896,
+    "dimensions": "704x708",
+    "score": 3,
+    "verdict": "SUSPICIOUS",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 532856"
+      },
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.0000 over first 5% of pixels (chi2=236.3, 83 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pug_openstego.png",
+    "format": "PNG",
+    "size": 773200,
+    "dimensions": "704x708",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.0000 over first 5% of pixels (chi2=235.7, 83 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\pug_scattered_lsb.png",
+    "format": "PNG",
+    "size": 532954,
+    "dimensions": "704x708",
+    "score": 3,
+    "verdict": "SUSPICIOUS",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 532914"
+      },
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.0000 over first 5% of pixels (chi2=235.3, 83 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\tarnation_aep.png",
+    "format": "PNG",
+    "size": 380728,
+    "dimensions": "480x480",
+    "score": 8,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 380688"
+      },
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.9998 over first 5% of pixels (chi2=61.4, 106 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.4906 @ first 5%; G: max p=0.9998 @ first 5%; B: max p=0.5335 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\tarnation_lsb.png",
+    "format": "PNG",
+    "size": 380807,
+    "dimensions": "480x480",
+    "score": 13,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 380767"
+      },
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.9998 over first 5% of pixels (chi2=60.8, 106 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.4872 @ first 5%; G: max p=0.9998 @ first 5%; B: max p=0.5531 @ first 5%]"
+      },
+      {
+        "severity": "high",
+        "check": "lsb-extraction",
+        "detail": "LSB stream decodes to structured data -> RGB/big-first/offset4: printable text 'what in tarnation is a secret fi'"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\tarnation_openstego.png",
+    "format": "PNG",
+    "size": 549942,
+    "dimensions": "480x480",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.9999 over first 5% of pixels (chi2=58.3, 106 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.5321 @ first 5%; G: max p=0.9999 @ first 5%; B: max p=0.5396 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\tarnation_scattered_lsb.png",
+    "format": "PNG",
+    "size": 380800,
+    "dimensions": "480x480",
+    "score": 8,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'deBG' (16 bytes) at offset 380760"
+      },
+      {
+        "severity": "high",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.9999 over first 5% of pixels (chi2=59.4, 106 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.5179 @ first 5%; G: max p=0.9999 @ first 5%; B: max p=0.5319 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\thugpug.png",
+    "format": "PNG",
+    "size": 389267,
+    "dimensions": "704x708",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel B: p=0.0000 over first 5% of pixels (chi2=235.7, 83 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\practical_test\\what in tarnation.jpg",
+    "format": "JPEG",
+    "size": 35241,
+    "dimensions": "480x480",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "jpeg-no-eoi",
+        "detail": "no EOI marker found (truncated or damaged)"
+      },
+      {
+        "severity": "info",
+        "check": "pixel-tests-skipped",
+        "detail": "JPEG: spatial LSB tests are not meaningful on decoded pixels (use --force-pixel-tests to run anyway)"
+      }
+    ],
+    "error": null
+  }
+]

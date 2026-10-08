@@ -1,0 +1,15 @@
+file,format,dimensions,size,verdict,score,findings
+.\claude_test\appended_text.gif,GIF,400x300,74616,LIKELY STEGO,5,trailing-data(high)
+.\claude_test\appended_zip.jpg,JPEG,400x300,10737,LIKELY STEGO,5,trailing-data(high)
+.\claude_test\clean.bmp,BMP,400x300,360054,NO INDICATORS,0,
+.\claude_test\clean.gif,GIF,400x300,70696,NO INDICATORS,0,
+.\claude_test\clean.jpg,JPEG,400x300,10509,NO INDICATORS,0,
+.\claude_test\clean.png,PNG,400x300,85017,NO INDICATORS,0,
+.\claude_test\clean.tiff,TIFF,400x300,360140,NO INDICATORS,0,
+.\claude_test\clean.webp,WEBP,400x300,68120,NO INDICATORS,0,
+.\claude_test\comment_base64.jpg,JPEG,400x300,15741,SUSPICIOUS,4,jpeg-large-comment(low) | jpeg-base64-comment(medium)
+.\claude_test\lsb_text.bmp,BMP,400x300,360054,LIKELY STEGO,5,lsb-extraction(high)
+.\claude_test\lsb_text.png,PNG,400x300,88728,LIKELY STEGO,5,lsb-extraction(high)
+.\claude_test\lsb_text.tiff,TIFF,400x300,360140,LIKELY STEGO,5,lsb-extraction(high)
+.\claude_test\lsb_text.webp,WEBP,400x300,70882,LIKELY STEGO,5,lsb-extraction(high)
+.\claude_test\private_chunk.png,PNG,400x300,88949,SUSPICIOUS,3,png-private-chunk(medium)

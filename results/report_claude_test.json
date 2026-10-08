@@ -1,0 +1,316 @@
+[
+  {
+    "file": ".\\claude_test\\appended_text.gif",
+    "format": "GIF",
+    "size": 74616,
+    "dimensions": "400x300",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "high",
+        "check": "trailing-data",
+        "detail": "3920 bytes after end of image data (offset 70696); entropy=4.30 bits/byte; mostly printable text"
+      },
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel R: p=0.0000 over first 5% of pixels (chi2=1010.6, 43 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\appended_zip.jpg",
+    "format": "JPEG",
+    "size": 10737,
+    "dimensions": "400x300",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "high",
+        "check": "trailing-data",
+        "detail": "228 bytes after end of image data (offset 10509); entropy=5.86 bits/byte; signatures: ZIP/DOCX/JAR@+0, ZIP (empty)@+206"
+      },
+      {
+        "severity": "info",
+        "check": "pixel-tests-skipped",
+        "detail": "JPEG: spatial LSB tests are not meaningful on decoded pixels (use --force-pixel-tests to run anyway)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\clean.bmp",
+    "format": "BMP",
+    "size": 360054,
+    "dimensions": "400x300",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.7997 over first 5% of pixels (chi2=42.4, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0107 @ first 5%; G: max p=0.7997 @ first 5%; B: max p=0.0237 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\clean.gif",
+    "format": "GIF",
+    "size": 70696,
+    "dimensions": "400x300",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel R: p=0.0000 over first 5% of pixels (chi2=1010.6, 43 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0000 @ first 5%; G: max p=0.0000 @ first 5%; B: max p=0.0000 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\clean.jpg",
+    "format": "JPEG",
+    "size": 10509,
+    "dimensions": "400x300",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "jpeg-no-eoi",
+        "detail": "no EOI marker found (truncated or damaged)"
+      },
+      {
+        "severity": "info",
+        "check": "pixel-tests-skipped",
+        "detail": "JPEG: spatial LSB tests are not meaningful on decoded pixels (use --force-pixel-tests to run anyway)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\clean.png",
+    "format": "PNG",
+    "size": 85017,
+    "dimensions": "400x300",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.7997 over first 5% of pixels (chi2=42.4, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0107 @ first 5%; G: max p=0.7997 @ first 5%; B: max p=0.0237 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\clean.tiff",
+    "format": "TIFF",
+    "size": 360140,
+    "dimensions": "400x300",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.7997 over first 5% of pixels (chi2=42.4, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0107 @ first 5%; G: max p=0.7997 @ first 5%; B: max p=0.0237 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\clean.webp",
+    "format": "WEBP",
+    "size": 68120,
+    "dimensions": "400x300",
+    "score": 0,
+    "verdict": "NO INDICATORS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.7997 over first 5% of pixels (chi2=42.4, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0107 @ first 5%; G: max p=0.7997 @ first 5%; B: max p=0.0237 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\comment_base64.jpg",
+    "format": "JPEG",
+    "size": 15741,
+    "dimensions": "400x300",
+    "score": 4,
+    "verdict": "SUSPICIOUS",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "jpeg-no-eoi",
+        "detail": "no EOI marker found (truncated or damaged)"
+      },
+      {
+        "severity": "low",
+        "check": "jpeg-large-comment",
+        "detail": "COM segment of 5228 bytes"
+      },
+      {
+        "severity": "medium",
+        "check": "jpeg-base64-comment",
+        "detail": "COM segment looks like base64"
+      },
+      {
+        "severity": "info",
+        "check": "pixel-tests-skipped",
+        "detail": "JPEG: spatial LSB tests are not meaningful on decoded pixels (use --force-pixel-tests to run anyway)"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\lsb_text.bmp",
+    "format": "BMP",
+    "size": 360054,
+    "dimensions": "400x300",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.1649 over first 5% of pixels (chi2=60.7, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0535 @ first 5%; G: max p=0.1649 @ first 5%; B: max p=0.0050 @ first 5%]"
+      },
+      {
+        "severity": "high",
+        "check": "lsb-extraction",
+        "detail": "LSB stream decodes to structured data -> RGB/big-first/offset0: printable text 'This is the secret payload hidde'"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\lsb_text.png",
+    "format": "PNG",
+    "size": 88728,
+    "dimensions": "400x300",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.1649 over first 5% of pixels (chi2=60.7, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0535 @ first 5%; G: max p=0.1649 @ first 5%; B: max p=0.0050 @ first 5%]"
+      },
+      {
+        "severity": "high",
+        "check": "lsb-extraction",
+        "detail": "LSB stream decodes to structured data -> RGB/big-first/offset0: printable text 'This is the secret payload hidde'"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\lsb_text.tiff",
+    "format": "TIFF",
+    "size": 360140,
+    "dimensions": "400x300",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.1649 over first 5% of pixels (chi2=60.7, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0535 @ first 5%; G: max p=0.1649 @ first 5%; B: max p=0.0050 @ first 5%]"
+      },
+      {
+        "severity": "high",
+        "check": "lsb-extraction",
+        "detail": "LSB stream decodes to structured data -> RGB/big-first/offset0: printable text 'This is the secret payload hidde'"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\lsb_text.webp",
+    "format": "WEBP",
+    "size": 70882,
+    "dimensions": "400x300",
+    "score": 5,
+    "verdict": "LIKELY STEGO",
+    "findings": [
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.1649 over first 5% of pixels (chi2=60.7, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0535 @ first 5%; G: max p=0.1649 @ first 5%; B: max p=0.0050 @ first 5%]"
+      },
+      {
+        "severity": "high",
+        "check": "lsb-extraction",
+        "detail": "LSB stream decodes to structured data -> RGB/big-first/offset0: printable text 'This is the secret payload hidde'"
+      }
+    ],
+    "error": null
+  },
+  {
+    "file": ".\\claude_test\\private_chunk.png",
+    "format": "PNG",
+    "size": 88949,
+    "dimensions": "400x300",
+    "score": 3,
+    "verdict": "SUSPICIOUS",
+    "findings": [
+      {
+        "severity": "medium",
+        "check": "png-private-chunk",
+        "detail": "non-standard chunk 'stEg' (3920 bytes) at offset 85005"
+      },
+      {
+        "severity": "info",
+        "check": "chi-square-lsb",
+        "detail": "channel G: p=0.7997 over first 5% of pixels (chi2=42.4, 52 bins). p near 1 => LSB pairs equalised (typical of LSB replacement). [R: max p=0.0107 @ first 5%; G: max p=0.7997 @ first 5%; B: max p=0.0237 @ first 5%]"
+      },
+      {
+        "severity": "info",
+        "check": "lsb-extraction",
+        "detail": "no file signature / readable text in LSB streams (simple sequential layout)"
+      }
+    ],
+    "error": null
+  }
+]
